@@ -1,0 +1,38 @@
+dt                      =  0.001                    ; time step
+nsteps                  =  NNNN                  ; number of steps
+nstcomm                 =  100                       ; reset c.o.m. motion
+nstcalcenergy           =  10			            ; calculate energy -- this must be less than nstcomm
+nstxout                 =  20                       ; write coords
+nstvout                 =  20                       ; write velocities
+nstlog                  =  10000                    ; print to logfile
+nstenergy               =  40                       ; print energies
+compressed-x-grps       =  System		            ; xtc groups
+nstxout-compressed      =  20                       ; xtc frequency
+
+pbc	                    =  xyz
+ns_type                 =  grid                     ; pairlist method
+nstlist                 =  10                       ; update pairlist (with verlet this is a min)
+cutoff-scheme           =  Group
+rlist                   =  4.0
+vdwtype                 =  Cut-off
+vdw-modifier            =  Force-switch
+coulombtype             =  Cut-off
+rvdw                    =  3.5                     ; cut-off for vdw
+rvdw-switch             =  3.0
+rcoulomb                =  4.0                     ; cut-off for coulomb
+
+Tcoupl                  =  v-rescale               ; temperature coupling type
+tc-grps                 =  System	            ; t-coupling groups
+tau_t                   =  0.5		            ; time constant for t-coupling 
+ref_t                   =  100.4                    ; desired temperature
+
+Pcoupl                  =  Parrinello-Rahman                ; pressure coupling type
+Pcoupltype              =  isotropic                ; pressure geometry
+tau_p                   =  1.0                      ; p-coupoling time
+compressibility         =  1.2e-3                   ; compressibility
+ref_p                   =  83.0                      ; desired pressure
+refcoord_scaling        =  all			            ; scale atoms for p-coupling
+DispCorr                =  EnerPres                 ; long range correction
+gen-vel                 =  no                       ; generate init. vel
+gen-temp                =  100.4                    ; init. temp.
+;gen-seed                = -1                     ; random seed
