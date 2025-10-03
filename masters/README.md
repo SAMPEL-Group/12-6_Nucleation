@@ -1,17 +1,19 @@
-Author: PH Minh
-Last modified by: PH Minh
-Last modified on: 07-17-2023
+Author: PH Minh \
+Last modified by: PH Minh \
+Last modified on: 10-03-2025
 
-# Purpose of this folder
+## Content
 
 - This folder serves as a directory where we store information about our system. 
     - .top file 
     - .mdp file 
     - .gro file 
     - .trr and path-.txt files for our configs so that we can start running RETIS
-    - setup-.sh scripts so that we can setup our path ensemble folders 
+    - setup-.sh scripts so that we can setup our path ensemble folders
+        - NOTE: Please source these two setup shell scripts. 
 
-# Caveat 
+## Special Note
 
-- The caveat of this folder (as you may notice) is that you will not find the .trr and .txt files. These files are in the config extraction folder, which is in the "get-init-config" directory. 
+- You will notice that the `*.trr` and `.txt` files are not contained within this directory. The files are too large to be uploaded here.
+- Please reach out to sarupria@umn.edu and minhx010@umn.edu for access to these files.
 
