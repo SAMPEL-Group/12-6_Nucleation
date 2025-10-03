@@ -2,6 +2,12 @@
 
 This directory contains scripts to run Replica Exchange Transition Interface Sampling (RETIS) of Lennard-Jones (12-6) particles nucleation. 
 
+If you use codes from this repository, please cite the following publications:
+> Minh, P.; Hall, S. W.; DeFever, R. S.; Sarupria, S. Crystal Nucleation Kinetics and Mechanism: Influence of Interaction Potential. J. Phys. Chem. B 2025, 129, 35, 8976–8990.
+
+> Hall, S. W.; Díaz Leines, G.; Sarupria, S.; Rogal, J. Practical guide to replica exchange transition interface sampling and forward flux sampling. J. Chem. Phys. 2022, 156, 200901. 
+
+
 ## Contents
 ```bash
 .
