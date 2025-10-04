@@ -59,10 +59,10 @@ def main():
     global paths
    
     # Read in paths from starting move
-    read_paths('6110')
+    read_paths('initf')
 
     # Now we actually start RETIS
-    for glmoveid in range(6111,6201):
+    for glmoveid in range(0,6200):
         global_move_generator(glmoveid)
 
 def read_paths(glmoveid):
